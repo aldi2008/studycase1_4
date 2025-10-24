@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: YOUR_DOCKERHUB_USERNAME/demo-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 5000
+  nodePort: 30080
+
+resources: {}
